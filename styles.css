@@ -1,4 +1,10 @@
-h1 {
-    font-family: 'GFS Didot';
-    text-shadow: 3px 3px 1px black;
+*{
+    font-family:Calibri, sans-serif;
   }
+
+.header {
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 34, 39);
+    margin: auto;
+    text-align: center;
+}
