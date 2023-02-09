@@ -1,17 +1,56 @@
 
-* {
+
+.entirelogo {
   font-family: Garamond; 
   font-size: 26px;
-}
-.header {
     color: rgb(255, 255, 255);
     background-color: rgb(27, 34, 39);
     margin: auto;
-    text-align: center;
     font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
 }
 
-.h1{
-  font-family:Garamond;
-  font-size: 100px;
+div.mylogo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+div.logotext {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+div.row2 {
+  
+  font-family: Lucida;
+  margin-top: 10px;
+  font-size: 20px;
+  
+}
+.text-contactus {
+  font-family: Garamond; 
+}
+
+.slogan {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.contactinfo {
+  margin-top: 20px;
+  background-color: rgb(27, 34, 39);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+div.ourserviceshead {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-family: Garamond; 
+  
+}
+
+body {
+  background-color: rgb(197, 171, 155);
 }
