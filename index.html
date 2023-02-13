@@ -46,32 +46,32 @@
 </div>
 
 
-    <div class = "row" >
-        <div class="col-lg-12">
-            <table class="table table-hover" >
-                <thead>
-                <tr>
-                    <th>Available Services</th>
-                    <th>Price (CAD$)</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Men's Cut</td>
-                    <td>24.99$</td>
-                </tr>
-                <tr>
-                    <td>Men's Cut + Beard Trim</td>
-                    <td>29.99$</td>
-                </tr>
-                <tr>
-                    <td>Woman's Cut</td>
-                    <td>44.99$</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+<div class = "row" >
+    <div class="col-lg-12">
+        <table class="table table-hover" >
+            <thead>
+            <tr>
+                <th>Available Services</th>
+                <th>Price (CAD$)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Men's Cut</td>
+                <td>24.99$</td>
+            </tr>
+            <tr>
+                <td>Men's Cut + Beard Trim</td>
+                <td>29.99$</td>
+            </tr>
+            <tr>
+                <td>Woman's Cut</td>
+                <td>44.99$</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
+</div>
 
 <div class = "ourstaff"> 
     <div class="container-fluid">
@@ -122,7 +122,68 @@
     </div>
 </div>
 
+<div class = "ourstaff"> 
+    <div class="container-fluid">
+        <div class = "row" >
+                <div class="col-sm-12" >
+                    Are you ready to book a appointment?
+                </div>
+        </div>
+    </div>
+</div>
+<br>
+<!-- <p class = "appointment"> <b>Tell us a bit about you so we can arrange the best service for you!</b></p> -->
 
+<form name="frm">
+    <div class = "form-group">
+        <!-- <label for= "emailAddress">Email address</label> -->
+        <p class = "appointment">Email Address</p>
+        <input type = "email" class = "form-control" name="emailAddress" id = "emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+        <p class = "smallinfo">
+            <small>
+                So we can notify you about the details of appointment!
+            </small>
+        </p>
+    </div>
+
+    <div class="form-group">
+        <p class = "appointment">Phone Number</p>
+        <!-- <label for="phoneNumber">Your phone Number</label> -->
+        <textarea class="form-control" id="phoneNumber" name="phoneNumber" rows="1" placeholder="Enter phone number"></textarea>
+    </div>
+
+    <div class ="form-group">
+        <p class = "appointment">Select Your Appointment Date and time</p>
+        <!-- <label for="dateTimeInput" class="col-2 col-form-label">Select your appointment Date and time</label> -->
+        <input class="form-control" type="datetime-local" name="dateTimeInput" id="dateTimeInput">
+    </div>
+    
+    <p class = "appointment">Select the Services you want!</p><br>
+    <div class="form-check">
+        <!-- <p3>what types of services do you want?</p3> -->
+        <input type="checkbox" class="form-check-input" id="serviceCheck1">
+        <label class="form-check-label" for="serviceCheck1">Men's Cut</label><br>
+        <input type="checkbox" class="form-check-input" id="serviceCheck2">
+        <label class="form-check-label" for="serviceCheck2">Men's Cut + Beard Trim</label><br>
+        <input type="checkbox" class="form-check-input" id="serviceCheck3">
+        <label class="form-check-label" for="serviceCheck3">Women's Cut</label><br>
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label class="appointment" for="additionalInfo"><b>Any comments or suggestions before your haircuts that want to let us know?</b></label>
+        <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+    </div>
+
+    <button type = "submit" class = "btn btn-primary" onclick="return IsEmpty();">Submit</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</form>
 
 <div class = "contactinfo" >
     <div class="col-lg-12">
@@ -131,6 +192,23 @@
         <b>Salon Address:</b> 201 Wellington Ave, ON, Canada
         <br>
         <b>Phone:</b> 613-928-1024</p>
-
     </div>
 </div>
+
+<script>
+    function IsEmpty() {
+        if (document.forms['frm'].emailAddress.value === "") {
+            alert("Email address is empty");
+            return false;
+        }
+        if (document.forms['frm'].phoneNumber.value === "") {
+            alert("Phone number is empty");
+            return false;
+        }
+        if (document.forms['frm'].dateTimeInput.value === "") {
+            alert("Date and Time is empty");
+            return false;
+        }
+        return true;
+    }
+</script>
