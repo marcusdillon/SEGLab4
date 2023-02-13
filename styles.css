@@ -113,3 +113,13 @@ body {
   color: rgb(255, 255, 255);
   font-family: Garamond; 
 }
+.haircolours {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family: Garamond; 
+}
